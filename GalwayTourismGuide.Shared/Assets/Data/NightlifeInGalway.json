@@ -1,0 +1,47 @@
+[
+  {
+    "Title": "Roisin Dubh",
+    "Subtitle": "Showcasing local and international live music and comedy acts.",
+    "ImageUrl": "/Assets/DataImages/roisinDubhPic.jpg",
+    "Description": "Róisín Dubh has long been the home of comedy in Galway. Many great acts including Stewart Lee, Phill Jupitus & Rich Hall, list it as being one of their top 10 venues in the world. \r\nSilent Disco is now a big part of late nights at Róisín Dubh – during the college year; there is generally a queue out the door on a Tuesday night.\r\nRoisin Dubh is also the driving force behind the Galway Comedy Festival.",
+    "Phone": "353 91 586540",
+    "Website": "http://www.roisindubh.net",
+    "_id": "5666efac04a1c3091cb19f46"
+  },
+  {
+    "Title": "Carbon",
+    "Subtitle": "One of the most popular clubs in Galway City",
+    "ImageUrl": "/Assets/DataImages/carbonGalway.png",
+    "Description": "Carbon is a purpose built nightclub & entertainment venue, opened since February 2011 and is a host to some of the biggest names in club music such as Josh Butler, Toyboy & Robin and Shadow Child.\r\nThey have themed club nights every week such as BOGOFF (Buy One Get One For Free)",
+    "Phone": "+353 91 449204",
+    "Website": "http://www.carbongalway.ie/#home",
+    "_id": "5666f10904a1c3091cb19f49"
+  },
+  {
+    "Title": "Eglinton Casino & Card club",
+    "Subtitle": "The Eglinton Casino & Poker Club. Situated in the heart of Galway, Ireland.",
+    "ImageUrl": "/Assets/DataImages/eglinton_casino2.jpg",
+    "Description": "Since its opening in July 2007, The Eglinton Casino & Card Club has proven to be the premier casino in the west of Ireland. Membership is free and is open to any member of the public. As well as operating a full casino, for those who prefer a card based game they also have one of the biggest poker clubs in Connaught and Ireland\r\nThere are different events on every night including Omaha and Pot Limit Poker\r\nPlayers can also avail of a wide range of snacks in their restaurant along with tea and coffee and complimentary alcoholic beverages while playing.",
+    "Phone": "+353 91 569222",
+    "Website": "http://www.theeglinton.com/default.aspx",
+    "_id": "5666f21e04a1c3091cb19f4a"
+  },
+  {
+    "Title": "Tig Coili",
+    "Subtitle": "A traditional Irish pub in the Latin Quarter",
+    "ImageUrl": "/Assets/DataImages/tighcoilinside.gif",
+    "Description": "Tig Cóilí is situated on Mainguard Street at the end of Shop Street. This cosy pub is well known for its nightly Traditional Irish music sessions. During the summer months you will  see people overflowing from its front door. Inside Tig Cóilí, the walls are decorated with pictures of past performers here and other memorabilia related to the pub. \r\nTig Cóilí is a great place to go to soak up some great Trad music in the heart of the City.",
+    "Phone": "+353 91 561 294",
+    "Website": "",
+    "_id": "5666f2c404a1c3091cb19f4e"
+  },
+  {
+    "Title": "Fibber Magees",
+    "Subtitle": "A late bar, right in Eyre Square.",
+    "ImageUrl": "/Assets/DataImages/fibbers.jpg",
+    "Description": "Located in Eyre Square, Fibbers gained nationwide notoriety in 2004 when it briefly challenged the smoking ban. The crowd is generally under 25 with Fibbers being popular among college students for its drinks deals during the week. At the weekends the crowd remains young as well as attracting visiting hen and stag nights and Fibbers also draws a loyal following for live soccer matches which it shows on 1 large screen and numerous other tvs throughout the pub.",
+    "Phone": "+353 91 564633",
+    "Website": "https://www.facebook.com/profile.php?id=1570201089",
+    "_id": "5666f37c04a1c3091cb19f52"
+  }
+]

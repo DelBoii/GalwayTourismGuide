@@ -1,0 +1,47 @@
+[
+  {
+    "Title": "Town Hall Theatre Galway",
+    "Subtitle": "Open 362 days a year providing entertainment",
+    "ImageUrl": "/Assets/DataImages/townhallGalway.jpg",
+    "Description": "Town Hall Theatre Galway, incorporating the state of the art 400-seater Main Auditorium and the 52-seater Studio Space at Courthouse Square, and the nearby, multi-purpose Black Box performance space on Dyke Road where they present an extensive and eclectic mix of theatre, concerts, musicals, dance, film, comedy and family shows year-round. Their three venues are open 362 days a year and 15 hours a day on average and attract audiences in excess of 100,000 annually.",
+    "Address": "point.53.27608_-9.05474_Courthouse%20Square,%20Galway%20City",
+    "Phone": "091-569777",
+    "_id": "5666ea0581de9b189ce60045"
+  },
+  {
+    "Title": "Galway Christmas Market",
+    "Subtitle": "A yearly celebration of multi-cultural food and craic!",
+    "ImageUrl": "/Assets/DataImages/christmasMarket.jpg",
+    "Description": "Each year the Galway Christmas Market is presented by the Galway City Business Association (GCBA), the organisation responsible to increase footfall in Galway by promoting the City as a relaxing, safe, friendly and vibrant place to visit and do business, to improve access & to ensure a wide variety of choice.\r\n\r\nOpening Times (Daily from Friday 20th November until Tuesday 22nd December 2015)\r\nMonday 12 noon – 8pm\r\nTuesday 12 noon – 8pm\r\nWednesday 12 noon – 8pm\r\nThursday 10am – 10pm\r\nFriday 10am – 10pm\r\nSaturday 10am – 10pm\r\n\r\nSunday 10am – 10pm\r\n\r\nNow in its sixth year, the market is also supported by Galway City Council and last year alone attracted over 600,000 visitors, generating a direct economic impact of almost €20,000,000 for Galway city.",
+    "Address": "point.53.2747802734375_-9.04988956451416_Eyre%20Square",
+    "Phone": "",
+    "_id": "5666ea8d81de9b189ce60048"
+  },
+  {
+    "Title": "The Galway Arts Festival",
+    "Subtitle": "Running in July every year",
+    "ImageUrl": "/Assets/DataImages/festivalArts.jpg",
+    "Description": "Galway International Arts Festival is the Festival of extraordinary experiences, a creative collision of performance, music, visual art, theatre and spectacle. Rooted in Galway, the Festival unlocks peoples' passions and inspires new ways of thinking and acting.\r\nFrom the all-out party atmosphere at the Festival Big Top to the quiet contemplation in the Festival galleries...the Festival transforms the city through the arts in an engaging, fun and authentic way. If you happen to visit Galway during the arts festival, expect to be transformed too.",
+    "Address": "",
+    "Phone": "",
+    "_id": "5666ec2381de9b189ce60052"
+  },
+  {
+    "Title": "The Galway Races",
+    "Subtitle": "Two yearly festivals providing some of the best racing entertainment in the world",
+    "ImageUrl": "/Assets/DataImages/galwayRaces.jpg",
+    "Description": "The Galway Races is one the biggest horse racing festivals in Ireland and is held on the last Monday of July every year, aswell as two meetings in September and October. Held at Ballybrit Racecourse in Galway, Ireland over seven days, it is the longest of all the race meets that occur in Ireland.\r\nThe busiest days of the festival are Wednesday, when the Galway Plate is held, and Thursday, when the Galway Hurdle and Ladies' Day take place.",
+    "Address": "point.53.29846954345703_-8.993729591369629_The%20Galway%20Racecourse%20",
+    "Phone": "091 753870",
+    "_id": "5666f5d704a1c3091cb19f5c"
+  },
+  {
+    "Title": "Comedy Festival Galway",
+    "Subtitle": "The best of Irish comedy, sketch and improv",
+    "ImageUrl": "/Assets/DataImages/logoComedy.gif",
+    "Description": "Sponsored by Vodafone the Galway Comedy Festival is a yearly celebration of top Irish and International comedy, sketch and improv. Located in the Roisin Dubh pub it hosts a vast array of interesting and sometimes eccentric characters providing an unforgettable experience ",
+    "Address": "point.53.2701_-9.05816_",
+    "Phone": "087 132 0463",
+    "_id": "56687eeb81de9b09504d125b"
+  }
+]

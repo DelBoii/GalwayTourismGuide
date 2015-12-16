@@ -1,0 +1,44 @@
+[
+  {
+    "MenuType": "DeepLink",
+    "Title": "Aran Island Ferries",
+    "Icon": "/Assets/DataImages/White_Ship_-_160x160.png",
+    "Target": "http://aranislandferries.com",
+    "_id": "1b2e26f7-9932-4a56-ba5c-99587052efef"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Irish Rail",
+    "Icon": "/Assets/DataImages/White_Train_-_160x160.png",
+    "Target": "tel:1850 366 222",
+    "_id": "b7f8a386-bfed-4c39-90b9-9d254b484158"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Whats on in Galway",
+    "Icon": "/Assets/DataImages/ApplicationLogo-2.png",
+    "Target": "http://whatsoningalway.com",
+    "_id": "59fa88ff-7ca6-47f6-9899-7d0239675eb4"
+  },
+  {
+    "MenuType": "Page",
+    "Title": "Galway Hotels",
+    "Icon": "/Assets/DataImages/Hotel2.png",
+    "Target": "GalwayHotelsListPage",
+    "_id": "9b136df5-1157-45c3-b341-a33476491c7c"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "The Corrib Princess Boat Tour",
+    "Icon": "/Assets/DataImages/White_Ship_-_160x160.png",
+    "Target": "http://www.corribprincess.ie",
+    "_id": "f22783f8-0785-4406-99c5-933ab438608c"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Travel Cheaper with Leap Card",
+    "Icon": "/Assets/DataImages/silverFrog.png",
+    "Target": "https://www.leapcard.ie/Home/index.html#",
+    "_id": "5add3490-4258-444a-8417-fe73246aa6f0"
+  }
+]

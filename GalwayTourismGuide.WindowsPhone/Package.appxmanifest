@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" 
+         xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" 
+         xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" 
+         xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+         xmlns:appstudio="http://schemas.microsoft.com/developer/appx/2015/appstudio" 
+         IgnorableNamespaces="appstudio">
+  <Identity Name="51377RyanGordon.GalwayTourismGuide" Publisher="CN=74494661-5784-4AA0-99E9-F49585B5E5E0" Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="eee7977b-73d9-4a65-9675-4ae4c4dcb60b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>Galway Tourism Guide</DisplayName>
+    <PublisherDisplayName>Ryan Gordon</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="GalwayTourismGuide.App">
+      <m3:VisualElements DisplayName="Galway Tourism Guide" Description="This app provides information on all of Galway&apos;s biggest events swell as outlining some of its best late night venues and some recommendations on dining in Galway to boot! A must have for anyone on their first trip Galway"
+          Square150x150Logo="Assets\Logo.png"
+          Square44x44Logo="Assets\SmallLogo.png"
+          ForegroundText="light"
+          BackgroundColor="transparent">
+        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png" ShortName="Galway Tourism Guide">
+          <m3:TileUpdate Recurrence="halfHour" UriTemplate="http://ds.winappstudio.com/api/tile/eee7977b-73d9-4a65-9675-4ae4c4dcb60b/004ec8b2-42af-49e9-80e7-e43832f6df44?columnName=ImageUrl" />
+          <m3:ShowNameOnTiles>
+            <m3:ShowOn Tile="square150x150Logo" />
+            <m3:ShowOn Tile="wide310x150Logo" />
+          </m3:ShowNameOnTiles>
+        </m3:DefaultTile>
+        <m3:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#a20025"/>
+        <m3:ApplicationView MinWidth="width320"/>
+        <!--Used in XAML Designer. DO NOT REMOVE-->
+        <m3:InitialRotationPreference>
+          <m3:Rotation Preference="portrait" />
+        </m3:InitialRotationPreference>
+      </m3:VisualElements>
+
+    </Application>
+  </Applications>
+
+  <!-- Microphone capability required for TextToSpeech -->
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+    <DeviceCapability Name="microphone" />
+  </Capabilities>
+    
+  <appstudio:Metadata>
+    <appstudio:Item Name="appId" Value="eee7977b-73d9-4a65-9675-4ae4c4dcb60b" />
+    <appstudio:Item Name="model" Version="1.11" />
+    <appstudio:Item Name="formula" Value="Win81" Version="1.11.1205.1" />
+    <appstudio:Item DataSource="Html" Version="1.0.1"/>
+    <appstudio:Item DataSource="Collection" Version="1.0.1"/>
+    <appstudio:Item DataSource="Flickr" Version="1.0.1"/>
+    <appstudio:Item DataSource="Bing" Version="1.0.1"/>
+    <appstudio:Item DataSource="Menu" Version="1.0.1"/>
+  </appstudio:Metadata>
+</Package>

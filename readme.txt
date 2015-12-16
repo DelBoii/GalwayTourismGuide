@@ -1,0 +1,1 @@
+﻿This application is a tourism guide to Galway City written in C#. I will try to update this repo with more as I continue to upgrade the app.

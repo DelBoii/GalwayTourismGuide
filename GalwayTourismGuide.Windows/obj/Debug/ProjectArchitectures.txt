@@ -1,0 +1,1 @@
+C:\Users\ryangordon\Desktop\GalwayTourismGuide.Source-v1.0.0.0\GalwayTourismGuide.Windows\GalwayTourismGuide.Windows.csproj;neutral

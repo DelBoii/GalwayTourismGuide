@@ -1,0 +1,156 @@
+﻿<base:PageBase
+    x:Class="GalwayTourismGuide.MainPage"
+    DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:was_commands="using:AppStudio.Common.Commands"
+    xmlns:was_actions="using:AppStudio.Common.Actions"
+    xmlns:base="using:GalwayTourismGuide"
+    xmlns:controls="using:GalwayTourismGuide.Controls"
+    xmlns:vm="using:GalwayTourismGuide.ViewModels"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource AppBackground}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <controls:PageHeaderControl x:Name="Header" LastUpdateDateTime="{Binding LastUpdated}" ShowBackButton="False" PageHeaderType="LogoText" HeaderText="{StaticResource AppTitle}" ShowSnappedMode="False"/>
+        <Hub x:Name="Container" Grid.Row="1" Padding="0,0,0,0" Margin="0,-18,0,0" DataContext="{Binding}" was_commands:SectionHeaderClickCommand.Command="{Binding SectionHeaderClickCommand}">
+            <HubSection x:Name="WelcomeSection" Header="{Binding Title}" HeaderTemplate="{StaticResource HubSectionHeaderTemplate}" Style="{StaticResource HubSectionStyle}"
+                        ContentTemplate="{StaticResource Panel_List_Html}" IsHeaderInteractive="{Binding HasMoreItems}" Padding="120,12,0,30"
+                        DataContext="{Binding Welcome}"
+                        d:DataContext="{d:DesignData Source=/Assets/Design/DesignDataHtml.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}"/>
+            <HubSection x:Name="HistorySection" Header="{Binding Title}" HeaderTemplate="{StaticResource HubSectionHeaderTemplate}" Style="{StaticResource HubSectionStyle}"
+                        ContentTemplate="{StaticResource Panel_List_BigVerticalCards}" IsHeaderInteractive="{Binding HasMoreItems}" Padding="80,12,0,30"
+                        DataContext="{Binding History}"
+                        d:DataContext="{d:DesignData Source=/Assets/Design/DesignData.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}"/>
+            <HubSection x:Name="GalwayEventsSection" Header="{Binding Title}" HeaderTemplate="{StaticResource HubSectionHeaderTemplate}" Style="{StaticResource HubSectionStyle}"
+                        ContentTemplate="{StaticResource Panel_List_PhotoLeft}" IsHeaderInteractive="{Binding HasMoreItems}" Padding="80,12,0,30"
+                        DataContext="{Binding GalwayEvents}"
+                        d:DataContext="{d:DesignData Source=/Assets/Design/DesignData.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}"/>
+            <HubSection x:Name="PicturesSection" Header="{Binding Title}" HeaderTemplate="{StaticResource HubSectionHeaderTemplate}" Style="{StaticResource HubSectionStyle}"
+                        ContentTemplate="{StaticResource Panel_List_Photo}" IsHeaderInteractive="{Binding HasMoreItems}" Padding="80,12,0,30"
+                        DataContext="{Binding Pictures}"
+                        d:DataContext="{d:DesignData Source=/Assets/Design/DesignData.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}"/>
+            <HubSection x:Name="FoodAndDrinkSection" Header="{Binding Title}" HeaderTemplate="{StaticResource HubSectionHeaderTemplate}" Style="{StaticResource HubSectionStyle}"
+                        ContentTemplate="{StaticResource Panel_List_PhotoLeft}" IsHeaderInteractive="{Binding HasMoreItems}" Padding="80,12,0,30"
+                        DataContext="{Binding FoodAndDrink}"
+                        d:DataContext="{d:DesignData Source=/Assets/Design/DesignData.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}"/>
+            <HubSection x:Name="NightlifeInGalwaySection" Header="{Binding Title}" HeaderTemplate="{StaticResource HubSectionHeaderTemplate}" Style="{StaticResource HubSectionStyle}"
+                        ContentTemplate="{StaticResource Panel_List_BigVerticalCards}" IsHeaderInteractive="{Binding HasMoreItems}" Padding="80,12,0,30"
+                        DataContext="{Binding NightlifeInGalway}"
+                        d:DataContext="{d:DesignData Source=/Assets/Design/DesignData.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}"/>
+            <HubSection x:Name="GalwayActivitiesSection" Header="{Binding Title}" HeaderTemplate="{StaticResource HubSectionHeaderTemplate}" Style="{StaticResource HubSectionStyle}"
+                        ContentTemplate="{StaticResource Panel_List_NoPhoto}" IsHeaderInteractive="{Binding HasMoreItems}" Padding="80,12,0,30"
+                        DataContext="{Binding GalwayActivities}"
+                        d:DataContext="{d:DesignData Source=/Assets/Design/DesignData.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}"/>
+            <HubSection x:Name="AccommodationSection" Header="{Binding Title}" HeaderTemplate="{StaticResource HubSectionHeaderTemplate}" Style="{StaticResource HubSectionStyle}"
+                        ContentTemplate="{StaticResource Panel_List_HorizontalCards}" IsHeaderInteractive="{Binding HasMoreItems}" Padding="80,12,0,30"
+                        DataContext="{Binding Accommodation}"
+                        d:DataContext="{d:DesignData Source=/Assets/Design/DesignData.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}"/>
+            <HubSection x:Name="MyUsefulLinksSection" Header="{Binding Title}" HeaderTemplate="{StaticResource HubSectionHeaderTemplate}" Style="{StaticResource HubSectionStyle}"
+                        ContentTemplate="{StaticResource Panel_Menu_ListPhotoLeft}" IsHeaderInteractive="{Binding HasMoreItems}" Padding="80,12,0,30"
+                        DataContext="{Binding MyUsefulLinks}"
+                        d:DataContext="{d:DesignData Source=/Assets/Design/DesignDataMenu.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}"/>
+            <HubSection x:Name="AboutTheAppSection" Header="{Binding Title}" HeaderTemplate="{StaticResource HubSectionHeaderTemplate}" Style="{StaticResource HubSectionStyle}"
+                        ContentTemplate="{StaticResource Panel_List_Html}" IsHeaderInteractive="{Binding HasMoreItems}" Padding="80,12,120,30"
+                        DataContext="{Binding AboutTheApp}"
+                        d:DataContext="{d:DesignData Source=/Assets/Design/DesignDataHtml.json, Type=vm:DesignViewModel, IsDesignTimeCreatable=true}"/>
+        </Hub>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="SnappedView">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Container" Storyboard.TargetProperty="Orientation">
+                            <DiscreteObjectKeyFrame KeyTime="0">
+                                <DiscreteObjectKeyFrame.Value>
+                                    <Orientation>Vertical</Orientation>
+                                </DiscreteObjectKeyFrame.Value>
+                            </DiscreteObjectKeyFrame>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Header" Storyboard.TargetProperty="ShowSnappedMode">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="True"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="WelcomeSection" Storyboard.TargetProperty="ContentTemplate">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Panel_List_Html_Snapped}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="WelcomeSection" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="24,10,24,10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HistorySection" Storyboard.TargetProperty="ContentTemplate">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Panel_List_BigVerticalCards_Snapped}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HistorySection" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="24,10,24,10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="GalwayEventsSection" Storyboard.TargetProperty="ContentTemplate">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Panel_List_PhotoLeft_Snapped}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="GalwayEventsSection" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="24,10,24,10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PicturesSection" Storyboard.TargetProperty="ContentTemplate">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Panel_List_Photo_Snapped}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PicturesSection" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="24,10,24,10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FoodAndDrinkSection" Storyboard.TargetProperty="ContentTemplate">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Panel_List_PhotoLeft_Snapped}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FoodAndDrinkSection" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="24,10,24,10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NightlifeInGalwaySection" Storyboard.TargetProperty="ContentTemplate">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Panel_List_BigVerticalCards_Snapped}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NightlifeInGalwaySection" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="24,10,24,10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="GalwayActivitiesSection" Storyboard.TargetProperty="ContentTemplate">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Panel_List_NoPhoto_Snapped}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="GalwayActivitiesSection" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="24,10,24,10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AccommodationSection" Storyboard.TargetProperty="ContentTemplate">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Panel_List_HorizontalCards_Snapped}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AccommodationSection" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="24,10,24,10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MyUsefulLinksSection" Storyboard.TargetProperty="ContentTemplate">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Panel_Menu_ListPhotoLeft_Snapped}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MyUsefulLinksSection" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="24,10,24,10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AboutTheAppSection" Storyboard.TargetProperty="ContentTemplate">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Panel_List_Html_Snapped}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AboutTheAppSection" Storyboard.TargetProperty="Padding">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="24,10,24,10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="FullscreenView">
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+
+    <Page.BottomAppBar>
+        <was_actions:ActionsCommandBar ActionsSource="{Binding Actions}" Visibility="{Binding HasActions, Converter={StaticResource BoolToVisibilityConverter}}"
+                                       Background="{StaticResource AppBarBackground}" BorderBrush="{StaticResource AppBarBackground}" Foreground="{StaticResource AppBarForeground}"/>
+    </Page.BottomAppBar>
+</base:PageBase>
+

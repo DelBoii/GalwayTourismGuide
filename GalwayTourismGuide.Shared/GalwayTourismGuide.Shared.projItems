@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Config\ActionConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Config\ConfigBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Config\PageConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Config\SectionConfigBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DesignTime\DesignViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\TileServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AboutThisAppViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ComposedItemViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DataViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ItemViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PrivacyViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MenuExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ImageViewer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\WelcomeListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\HistoryListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\HistoryDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GalwayEventsListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GalwayEventsDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PicturesListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PicturesDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FoodAndDrinkListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FoodAndDrinkDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\NightlifeInGalwayListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\NightlifeInGalwayDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GalwayActivitiesListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\AccommodationListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\AccommodationDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MyUsefulLinksListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GalwayHotelsListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\AboutTheAppListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PageBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\History1Schema.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\GalwayEvents1Schema.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\FoodAndDrink1Schema.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\NightlifeInGalway1Schema.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\Accommodation1Schema.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\WelcomeConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\HistoryConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\GalwayEventsConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\PicturesConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\FoodAndDrinkConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\NightlifeInGalwayConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\GalwayActivitiesConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\AccommodationConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\MyUsefulLinksConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\GalwayHotelsConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sections\AboutTheAppConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commands\PlatformCommands.cs" />
+        <PRIResource Include="$(MSBuildThisFileDirectory)Strings\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Design\DesignData.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Design\DesignDataHtml.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Design\DesignDataMenu.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Design\DesignDataTD.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Design\DarkGray.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Design\LightGray.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Design\MediumGray.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\Tile1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\Tile2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\Tile3.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\Tile4.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\Tile5.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\FT5S-Christmas-Market-Eyre-Square-Galway.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\walled_city.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\townhallGalway.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\christmasMarket.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\festivalArts.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\galwayRaces.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\logoComedy.gif">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\roisinDubhPic.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\carbonGalway.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\eglinton_casino2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\tighcoilinside.gif">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\fibbers.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\claytonglaway.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\MeyrickGalway.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\ghotelgalway.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\salthillgalway.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\LoughAtaliaraddisson.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\galwayImperial.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\maldronHotel.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\parkHouseGalway.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\White_Ship_-_160x160.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\White_Train_-_160x160.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\ApplicationLogo-2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\Hotel2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\silverFrog.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\ApplicationLogo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Data\Welcome.htm">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Data\History.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Data\GalwayEvents.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Data\NightlifeInGalway.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Data\Accommodation.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Data\MyUsefulLinks.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Data\AboutTheApp.htm">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\ErrorNotificationControl.xaml.cs">
+      <DependentUpon>ErrorNotificationControl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="$(MSBuildThisFileDirectory)Controls\ErrorNotificationControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+        <Page Include="$(MSBuildThisFileDirectory)Styles\AppBarButtons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\AppTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\DefaultTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>
